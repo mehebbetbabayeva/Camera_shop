@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: Phetsarath;
+  src: "../font/phetsarath-regular.ttf";
+}
+@font-face {
+  font-family: Inter;
+  src: "../font/Inter-V.ttf";
+}
+.header-top {
+  width: 100%;
+  height: 48px;
+  background: #013F79;
+  position: relative;
+}
+.header-top .header-top-content {
+  width: 100%;
+  height: 48px;
+  align-items: center;
+  display: flex;
+}
+.header-top .header-top-content a {
+  flex: 1;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: "Phetsarath";
+}
+.header-top .camera-header {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+.header-top .camera-header img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+header {
+  width: 100%;
+  height: 118px;
+  background-color: #FFFFFF;
+}
+header .header-content {
+  width: 100%;
+  height: 118px;
+  display: flex;
+  align-items: center;
+}
+header .header-content .header-logo {
+  margin-right: 35px;
+}
+header .header-content .header-logo img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+header .header-content .header-nav ul {
+  display: flex;
+  gap: 20px;
+}
+header .header-content .header-nav ul li {
+  padding: 5px;
+  border-radius: 3px;
+}
+header .header-content .header-nav ul li a {
+  font-family: "Phetsarath";
+  font-weight: 400;
+  font-size: 16px;
+  color: #013F79;
+}
+header .header-content .header-nav ul li:hover {
+  background: #E6ECF2;
+}
+header .header-content .header-search {
+  margin-left: 30px;
+  background: #E6ECF2;
+  border-radius: 3px;
+  height: 47px;
+  width: 292px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Phetsarath";
+  font-weight: 400;
+}
+header .header-content .header-search:hover {
+  background: #c2c7cc;
+}
+header .header-content .header-search input {
+  background: none;
+  border: none;
+  height: 47px;
+  outline: none;
+  font-size: 16px;
+  padding-left: 10px;
+}
+header .header-content .header-search button {
+  background: none;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+header .header-content .header-language {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+header .header-content .header-language button {
+  padding: 12px;
+  background-color: #E6ECF2;
+  border: none;
+  border-radius: 3px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Inter";
+  cursor: pointer;
+}
+header .header-content .header-language button:hover {
+  background: #c2c7cc;
+}
+
+main #banner {
+  position: relative;
+}
+main #banner img {
+  height: auto;
+  max-height: 480px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #banner .banner-title {
+  height: 230px;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(347.55deg, #000000 10.58%, rgba(0, 0, 0, 0) 84.16%);
+  color: white;
+  text-align: right;
+  padding-right: 22px;
+  padding-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+main #banner .banner-title h1 {
+  font-family: "Phetsarath";
+  font-weight: 400;
+  font-size: 375%;
+}
+main #banner .banner-title h3 {
+  font-family: "Phetsarath";
+  font-weight: 400;
+  font-size: 212%;
+}
+main #features {
+  border: 1px solid red;
+  width: 100%;
+  height: 544px;
+  background: linear-gradient(360deg, rgba(217, 217, 217, 0.6) -24.66%, rgba(217, 217, 217, 0) 96.92%);
+}
+main #features header {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+main #features header .line {
+  width: 364px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.2);
+}
+main #features header h1 {
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0 100px;
+  font-family: "Phetsarath";
+}
+main #features main .card {
+  width: 308px;
+  height: 350px;
+  border: 1px solid red;
+  color: #000000;
+}
+main #features main .card figcaption h1 {
+  padding: 18px 21px;
+  font-weight: 400;
+  font-size: 125%;
+  font-family: "Phetsarath";
+}
+main #features main .card figcaption p {
+  padding: 0 18px 21px 18px;
+  font-weight: 400;
+  font-size: 75%;
+  font-family: "Phetsarath";
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header-top .header-top-content {
+    display: none;
+  }
+  .header-top .camera-header {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

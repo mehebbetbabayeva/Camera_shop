@@ -1,0 +1,11 @@
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header-top {
+    height: 17px;
+  }
+  .header-top .header-top-content {
+    display: none;
+  }
+  .header-top .camera-header {
+    display: none;
+  }
+}/*# sourceMappingURL=mq.css.map */
