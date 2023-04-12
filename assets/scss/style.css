@@ -171,9 +171,8 @@ main #banner .banner-title h3 {
   font-size: 212%;
 }
 main #features {
-  border: 1px solid red;
   width: 100%;
-  height: 544px;
+  max-height: 544px;
   background: linear-gradient(360deg, rgba(217, 217, 217, 0.6) -24.66%, rgba(217, 217, 217, 0) 96.92%);
 }
 main #features header {
@@ -196,6 +195,7 @@ main #features header h1 {
   font-family: "Phetsarath";
 }
 main #features main {
+  height: auto;
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -418,28 +418,25 @@ footer .container .footer-content .footer-credit span {
     font-size: 81%;
   }
   main #features {
-    height: 450px;
+    height: 500px;
   }
   main #features header .line {
     width: 150px;
   }
   main #features header h1 {
     text-align: center;
-    margin: 0;
+    margin: 0 10px;
     font-size: 14px;
   }
   main #features main {
-    height: auto;
-    width: auto;
     display: flex;
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     justify-content: flex-start;
   }
   main #features main .card {
+    flex: 0 0 300px;
     margin-right: 10px;
-    flex-shrink: 0;
-    scroll-snap-align: start;
   }
   footer {
     height: 330px;
