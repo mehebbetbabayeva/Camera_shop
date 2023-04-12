@@ -10,3 +10,15 @@ let scrollLeft;
     const walk = (x - startX) * 2;
     featuresMain.scrollLeft = scrollLeft - walk;
   });
+
+//mobile-menu
+document.querySelector("#mobile-menu").addEventListener("click",()=>{
+    let menuOverlay=document.querySelector(".mobile-menu-overlay");
+    menuOverlay.classList.add("active");
+})
+
+document.querySelector("#cancel").addEventListener("click",()=>{
+    let menuOverlay=document.querySelector(".mobile-menu-overlay");
+    menuOverlay.classList.remove("active");
+    
+})
