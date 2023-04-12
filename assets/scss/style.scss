@@ -257,10 +257,11 @@ main{
         }
     }
     #features{
+        padding-bottom:20px ;
         width: 100%;
-       max-height: 544px;
+        max-height: 544px;
         background: linear-gradient(360deg, rgba(217, 217, 217, 0.6) -24.66%, rgba(217, 217, 217, 0) 96.92%);
-    header{
+      header{
         width: 100%;
         display: flex;
         height: 50px;
@@ -311,6 +312,99 @@ main{
             }
         }
     }
+    }
+    #projects{
+        width: 100%;
+        min-height: 600px;
+        height: auto;
+        background-color: #fff;
+        .projects-content{
+            min-height: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            header{
+                width: 100%;
+                display: flex;
+                height: 50px;
+                align-items: center;
+                justify-content: center;
+                margin: 50px 0;
+                .line{
+                    width: 364px;
+                    height: 2px;
+                    background:rgba(0, 0, 0, 0.2);
+                }
+                h1{
+                    font-weight: 400;
+                    font-size: 30px;
+                    margin: 0 100px;
+                    font-family: 'Phetsarath';
+                }
+            }
+            main{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                .projects-card{
+                    width: 300px;
+                    height: 270px;
+                    border-radius: 18px;
+                    position: relative;
+                    img{
+                       width: 100%;
+                    }
+                    .projects-card-title{
+                        width: 100%;
+                        height: 120px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        justify-content: center;
+                        color: #fff;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        
+                        background: linear-gradient(180deg, #000000 9.54%, #00000047 100%);
+                        padding-right: 10px;
+                        border-radius: 0 0 18px 18px;
+                       
+                        h1{
+                            font-family: 'Inter';
+                            font-weight: 400;
+                            font-size: 22px;
+                            margin-bottom: 10px;
+                        }
+                        h2{
+                            font-weight: 400;
+                            font-size: 13px;
+                            font-family: 'Inter';
+                        }
+                    }
+                }
+            }
+            .project-btn{
+                margin-top:60px;
+                border-radius: 84px;
+                width: 323px;
+                height: 66px;
+                background: #346694;
+               color: #FFFFFF;
+                @include flex-center();
+                font-weight: 700;
+                font-size: 16px;
+                font-family: 'Phetsarath';
+                border: none;
+                cursor: pointer;
+                &:hover{
+                background: #163b5e;
+                }
+            }
+        }
     }
 }
 footer{
@@ -424,7 +518,6 @@ footer{
         max-width: 100%;
         padding: 0 5px;
         .header-content{
-            
             height: 65px;
             .header-logo{
                 margin-right: 8px;
@@ -535,6 +628,47 @@ footer{
                     flex: 0 0 300px;
                   margin-right: 10px;
                 }
+            }
+        }
+        #projects{
+            .projects-content{
+                header{
+                    .line{
+                      width: 150px;
+                    }
+                   h1{
+                      text-align: center;
+                      margin: 0 10px ;
+                      font-size: 14px;
+                   }
+      
+                  }
+                  main{
+                    height: 320px;
+                    justify-content:flex-start;
+                    flex-direction: row;
+                    @include flex-center();
+                    .projects-card{
+                        
+                        width: 140px;
+                        height: 130px;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        .projects-card-title{
+                            bottom:0;
+                            height: 47px;
+                            h1{
+                                margin-bottom: 0px;
+                            }
+                            h2{
+                                display: none;
+                            }
+                        }
+                    }
+                  }
+                  .project-btn{
+                    margin-top:10px;
+                  }
             }
         }
         

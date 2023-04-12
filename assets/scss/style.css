@@ -246,6 +246,7 @@ main #banner .banner-title h3 {
   font-size: 212%;
 }
 main #features {
+  padding-bottom: 20px;
   width: 100%;
   max-height: 544px;
   background: linear-gradient(360deg, rgba(217, 217, 217, 0.6) -24.66%, rgba(217, 217, 217, 0) 96.92%);
@@ -296,6 +297,99 @@ main #features main .card figcaption p {
   font-weight: 400;
   font-size: 75%;
   font-family: "Phetsarath";
+}
+main #projects {
+  width: 100%;
+  min-height: 600px;
+  height: auto;
+  background-color: #fff;
+}
+main #projects .projects-content {
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #projects .projects-content header {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+main #projects .projects-content header .line {
+  width: 364px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.2);
+}
+main #projects .projects-content header h1 {
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0 100px;
+  font-family: "Phetsarath";
+}
+main #projects .projects-content main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+main #projects .projects-content main .projects-card {
+  width: 300px;
+  height: 270px;
+  border-radius: 18px;
+  position: relative;
+}
+main #projects .projects-content main .projects-card img {
+  width: 100%;
+}
+main #projects .projects-content main .projects-card .projects-card-title {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(180deg, #000000 9.54%, rgba(0, 0, 0, 0.2784313725) 100%);
+  padding-right: 10px;
+  border-radius: 0 0 18px 18px;
+}
+main #projects .projects-content main .projects-card .projects-card-title h1 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+main #projects .projects-content main .projects-card .projects-card-title h2 {
+  font-weight: 400;
+  font-size: 13px;
+  font-family: "Inter";
+}
+main #projects .projects-content .project-btn {
+  margin-top: 60px;
+  border-radius: 84px;
+  width: 323px;
+  height: 66px;
+  background: #346694;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Phetsarath";
+  border: none;
+  cursor: pointer;
+}
+main #projects .projects-content .project-btn:hover {
+  background: #163b5e;
 }
 
 footer {
@@ -512,6 +606,41 @@ footer .container .footer-content .footer-credit span {
   main #features main .card {
     flex: 0 0 300px;
     margin-right: 10px;
+  }
+  main #projects .projects-content header .line {
+    width: 150px;
+  }
+  main #projects .projects-content header h1 {
+    text-align: center;
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  main #projects .projects-content main {
+    height: 320px;
+    justify-content: flex-start;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main #projects .projects-content main .projects-card {
+    width: 140px;
+    height: 130px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  main #projects .projects-content main .projects-card .projects-card-title {
+    bottom: 0;
+    height: 47px;
+  }
+  main #projects .projects-content main .projects-card .projects-card-title h1 {
+    margin-bottom: 0px;
+  }
+  main #projects .projects-content main .projects-card .projects-card-title h2 {
+    display: none;
+  }
+  main #projects .projects-content .project-btn {
+    margin-top: 10px;
   }
   footer {
     height: 330px;
