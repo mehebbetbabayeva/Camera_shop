@@ -391,6 +391,191 @@ main #projects .projects-content .project-btn {
 main #projects .projects-content .project-btn:hover {
   background: #163b5e;
 }
+main #sponsor {
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+  background-color: #fff;
+}
+main #sponsor .sponsor-content {
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+}
+main #sponsor .sponsor-content header {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+main #sponsor .sponsor-content header .line {
+  width: 364px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.2);
+}
+main #sponsor .sponsor-content header h1 {
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0 80px;
+  font-family: "Phetsarath";
+}
+main #sponsor .sponsor-content main {
+  width: 100%;
+  height: 180px;
+  border: 1px solid black;
+}
+main #products {
+  width: 100%;
+  min-height: 800px;
+  height: auto;
+  background: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #products header {
+  background: #F0F0F0;
+  width: 100%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+main #products header .line {
+  width: 364px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.2);
+}
+main #products header h1 {
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0 80px;
+  font-family: "Phetsarath";
+}
+main #products nav {
+  height: 100px;
+  padding: 0 70px;
+  width: 100%;
+}
+main #products nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+main #products nav ul a {
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Phetsarath";
+}
+main #products nav ul .selected {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #013F79;
+}
+main #products nav ul .selected a {
+  color: #013F79;
+}
+main #products main {
+  width: 100%;
+  padding: 35px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+main #products main .products-card {
+  flex: 1;
+  padding: 17px;
+  width: 200px;
+  height: 360px;
+  background-color: #fff;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main #products main .products-card h1 {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Phetsarath";
+}
+main #products main .products-card .card-logo {
+  width: 54px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 17px;
+}
+main #products main .products-card .card-product {
+  padding: 25px 0;
+}
+main #products main .products-card .card-btn {
+  background: #013F79;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #products main .products-card .card-btn:hover {
+  background: #0957a0;
+}
+main #products main .products-card .card-btn span {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Phetsarath";
+  margin-right: 10px;
+}
+main #products main .products-card a {
+  position: absolute;
+  bottom: 13px;
+  left: 17px;
+  display: flex;
+}
+main #products main .products-card a span {
+  color: #000000;
+  font-weight: 400;
+  font-size: 10px;
+  font-family: "Phetsarath";
+  margin-left: 6px;
+}
+main #products main .products-card h2 {
+  font-weight: 400;
+  font-size: 10px;
+  font-family: "Phetsarath";
+  opacity: 0.8;
+  position: absolute;
+  bottom: 13px;
+  right: 18px;
+}
+main #products .product-btn {
+  margin-bottom: 50px;
+  border-radius: 84px;
+  width: 323px;
+  height: 66px;
+  background: #346694;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Phetsarath";
+  border: none;
+  cursor: pointer;
+}
+main #products .product-btn:hover {
+  background: #163b5e;
+}
 
 footer {
   width: 100%;
@@ -641,6 +826,51 @@ footer .container .footer-content .footer-credit span {
   }
   main #projects .projects-content .project-btn {
     margin-top: 10px;
+  }
+  main #sponsor {
+    display: none;
+  }
+  main #products header .line {
+    width: 100px;
+  }
+  main #products header h1 {
+    text-align: center;
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  main #products nav {
+    display: none;
+  }
+  main #products main {
+    gap: 5px;
+  }
+  main #products main .products-card {
+    padding: 17px;
+    width: 130px;
+    height: 200px;
+  }
+  main #products main .products-card h1 {
+    font-size: 10px;
+  }
+  main #products main .products-card .card-logo {
+    width: 34px;
+    height: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #products main .products-card .card-product {
+    padding: 10px;
+    width: 140px;
+    height: 100px;
+  }
+  main #products main .products-card .card-btn {
+    height: 30px;
+  }
+  main #products main .products-card a {
+    left: 40px;
+  }
+  main #products main .products-card h2 {
+    display: none;
   }
   footer {
     height: 330px;
