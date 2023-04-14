@@ -24,12 +24,20 @@ html,body{
     flex-direction: column;
 }
 @font-face {
-    font-family: Phetsarath;
-    src: "../font/phetsarath-regular.ttf" ;
+    font-family: 'phetsarathregular';
+    src: url('phetsarath-regular-webfont.woff2') format('woff2'),
+         url('phetsarath-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 @font-face {
-    font-family: Inter;
-    src: "../font/Inter-V.ttf" ;
+    font-family: 'inter_vregular';
+    src: url('inter-v-webfont.woff2') format('woff2'),
+         url('inter-v-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 .burger{
     
@@ -125,7 +133,7 @@ html,body{
         color: #FFFFFF;
         font-weight: 400;
         font-size: 13px;
-        font-family: 'Phetsarath';
+        font-family: 'phetsarathregular';
         }
     }
     .camera-header{
@@ -160,7 +168,7 @@ header{
                     padding: 5px;
                     border-radius: 3px;
                     a{
-                        font-family: 'Phetsarath';
+                        font-family: 'phetsarathregular';
                         font-weight: 400;
                         font-size: 16px;
                         color: #013F79;
@@ -180,7 +188,7 @@ header{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            font-family: 'Phetsarath';
+            font-family: 'phetsarathregular';
             font-weight: 400;
             &:hover{
                 background: #c2c7cc; 
@@ -212,7 +220,7 @@ header{
                 color: #000000;
                 font-weight: 600;
                 font-size: 16px;
-                font-family: 'Inter';
+                font-family: 'inter_vregular';
                 cursor: pointer;
                 &:hover{
                     background: #c2c7cc; 
@@ -246,12 +254,12 @@ main{
               padding-right: 35px;
               padding-bottom: 35px;
               h1{ 
-                font-family: 'Phetsarath';
+                font-family: 'phetsarathregular';
                 font-weight: 400;
                 font-size: 60px;
               }
               h3{
-                font-family: 'Phetsarath';
+                font-family: 'phetsarathregular';
                 font-weight: 400;
                 font-size: 34px;
               }
@@ -280,7 +288,7 @@ main{
             font-weight: 400;
             font-size: 30px;
             margin: 0 100px;
-            font-family: 'Phetsarath';
+            font-family: 'phetsarathregular';
         }
     }
     main{
@@ -309,14 +317,14 @@ main{
                 padding: 0 10px;
                 font-weight: 400;
                 font-size: 125%;
-                font-family: 'Phetsarath';
+                font-family: 'phetsarathregular';
                 }
                 p{
                 padding: 0 10px;
                 text-align: justify;
                 font-weight: 400;
                 font-size: 75%;
-                font-family: 'Phetsarath';
+                font-family: 'phetsarathregular';
                 }
             }
         }
@@ -349,7 +357,7 @@ main{
                     font-weight: 400;
                     font-size: 30px;
                     margin: 0 100px;
-                    font-family: 'Phetsarath';
+                    font-family: 'phetsarathregular';
                 }
             }
             main{
@@ -382,7 +390,7 @@ main{
                             position: absolute;
                             bottom: 35px;
                             right: 10px;
-                            font-family: 'Inter';
+                            font-family: 'inter_vregular';
                             font-weight: 400;
                             font-size: 22px;
                             margin-bottom: 10px;
@@ -393,7 +401,7 @@ main{
                             right: 10px;
                             font-weight: 400;
                             font-size: 13px;
-                            font-family: 'Inter';
+                            font-family: 'inter_vregular';
                         }
                     }
                 }
@@ -408,7 +416,7 @@ main{
                 @include flex-center();
                 font-weight: 700;
                 font-size: 16px;
-                font-family: 'Phetsarath';
+                font-family: 'phetsarathregular';
                 border: none;
                 cursor: pointer;
                 &:hover{
@@ -442,7 +450,7 @@ main{
                     font-weight: 400;
                     font-size: 30px;
                     margin: 0 80px;
-                    font-family: 'Phetsarath';
+                    font-family: 'phetsarathregular';
                 }
             }
            
@@ -473,7 +481,7 @@ main{
                 font-weight: 400;
                 font-size: 30px;
                 margin: 0 80px;
-                font-family: 'Phetsarath';
+                font-family: 'phetsarathregular';
             }
         }
         nav{
@@ -489,7 +497,7 @@ main{
                     color: #000000;
                     font-weight: 700;
                     font-size: 16px;
-                    font-family: 'Phetsarath';
+                    font-family: 'phetsarathregular';
                 }
                 .selected{
                     padding-bottom: 5px;
@@ -525,7 +533,7 @@ main{
                     left: 17px;
                     font-weight: 700;
                     font-size: 16px;
-                    font-family: 'Phetsarath';
+                    font-family: 'phetsarathregular';
                 }
                 .card-logo{
                     width: 54px;
@@ -552,7 +560,7 @@ main{
                     span{
                     font-weight: 700;
                     font-size: 16px;
-                    font-family: 'Phetsarath';
+                    font-family: 'phetsarathregular';
                     margin-right: 10px;
                     }
                     
@@ -567,14 +575,14 @@ main{
                         color: #000000;
                         font-weight: 400;
                         font-size: 10px;
-                        font-family: 'Phetsarath';
+                        font-family: 'phetsarathregular';
                         margin-left: 6px;
                     }
                 }
                 h2{
                     font-weight: 400;
                     font-size: 10px;
-                    font-family: 'Phetsarath';
+                    font-family: 'phetsarathregular';
                     opacity: 0.8;
                     position: absolute;
                     bottom: 5px;
@@ -592,7 +600,7 @@ main{
                 @include flex-center();
                 font-weight: 700;
                 font-size: 16px;
-                font-family: 'Phetsarath';
+                font-family: 'phetsarathregular';
                 border: none;
                 cursor: pointer;
                 &:hover{
@@ -635,7 +643,7 @@ footer{
                             border-radius: 3px;
                             padding: 3px;
                             a{
-                                font-family: 'Phetsarath';
+                                font-family: 'phetsarathregular';
                                 font-weight: 700;
                                 font-size: 14px;
                                 color: #E5F0F6;
@@ -675,7 +683,7 @@ footer{
                         color: #FFFFFF;
                         font-weight: 400;
                         font-size: 17px;
-                        font-family: 'Phetsarath';
+                        font-family: 'phetsarathregular';
                     }
                 }
             }
@@ -683,7 +691,7 @@ footer{
                 margin-top: 40px;
                 font-weight: 700;
                 font-size: 14px;
-                font-family: 'Phetsarath';
+                font-family: 'phetsarathregular';
                 p{
                     color: #FFFFFF;
                 }
