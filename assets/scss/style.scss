@@ -1,11 +1,15 @@
-*{
+html,body{
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+}
+*{
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    vertical-align: top;
 }
-
 .container{
     max-width: 95%;
     margin: 0 auto;
@@ -62,7 +66,6 @@
 
 }
 .mobile-menu-overlay{
-
     width: 100%;
     height: 350px;
     background-color: #a6c0d898;
@@ -72,7 +75,8 @@
     z-index: 3;
     transition: 0.3s;
     ul{
-
+        margin: 0;
+        padding: 0;
         button{
             margin-bottom: 20px;
             border: none;
@@ -104,6 +108,7 @@
 .active{
     transition: 0.3s;
     left: 0;
+    top: 0;
 }
 .header-top{
     width: 100%;
@@ -142,7 +147,6 @@ header{
         display: flex;
         align-items: center;
         .header-logo{
-            margin-right: 35px;
             img{
                 object-fit: cover;
             }
@@ -152,6 +156,7 @@ header{
                 display: flex;
                 gap: 20px;
                 li{
+                    
                     padding: 5px;
                     border-radius: 3px;
                     a{
@@ -232,32 +237,30 @@ main{
         .banner-title{
             height: 230px;
             position: absolute;
-            bottom: 5px;
+            bottom: 0;
             right: 0;
             width: 100%;
             background: linear-gradient(347.55deg, #000000 10.58%, rgba(0, 0, 0, 0) 84.16%); 
               color: white;
               text-align: right;
-              padding-right: 22px;
-              padding-bottom: 22px;
-              @include flex-column();
-              justify-content: flex-end; 
+              padding-right: 35px;
+              padding-bottom: 35px;
               h1{ 
                 font-family: 'Phetsarath';
                 font-weight: 400;
-                font-size: 375%;
+                font-size: 60px;
               }
               h3{
                 font-family: 'Phetsarath';
                 font-weight: 400;
-                font-size: 212%;
+                font-size: 34px;
               }
             
 
         }
     }
     #features{
-        padding-bottom:20px ;
+        padding-bottom:50px ;
         width: 100%;
         max-height: 544px;
         background: linear-gradient(360deg, rgba(217, 217, 217, 0.6) -24.66%, rgba(217, 217, 217, 0) 96.92%);
@@ -286,25 +289,31 @@ main{
         width: 100%;
         justify-content: space-around;
         .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 308px;
-            height: 350px;
+            min-height: 300px;
+            height: auto;
             color: #000000;
             background: #FFFFFF;
             box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
             figure{
-              img{
-            width: 100%;
+                width: 100%;
+              img{  
+                width: 100%;
               }
             }
             figcaption{
                 h1{
-                padding: 18px 21px;
+                padding: 0 10px;
                 font-weight: 400;
                 font-size: 125%;
                 font-family: 'Phetsarath';
                 }
                 p{
-                padding: 0 18px 21px 18px;
+                padding: 0 10px;
+                text-align: justify;
                 font-weight: 400;
                 font-size: 75%;
                 font-family: 'Phetsarath';
@@ -355,31 +364,33 @@ main{
                     border-radius: 18px;
                     position: relative;
                     img{
-                       width: 100%;
+                        width: 100%;
+                       object-fit: cover;
                     }
                     .projects-card-title{
                         width: 100%;
-                        height: 120px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-end;
-                        justify-content: center;
+                        height: 220px;
                         color: #fff;
                         position: absolute;
                         bottom: 0;
                         right: 0;
-                        
+                        clip-path: polygon(0 73%, 100% 50%, 100% 100%, 0 100%);
                         background: linear-gradient(180deg, #000000 9.54%, #00000047 100%);
                         padding-right: 10px;
                         border-radius: 0 0 18px 18px;
-                       
                         h1{
+                            position: absolute;
+                            bottom: 35px;
+                            right: 10px;
                             font-family: 'Inter';
                             font-weight: 400;
                             font-size: 22px;
                             margin-bottom: 10px;
                         }
                         h2{
+                            position: absolute;
+                            bottom: 10px;
+                            right: 10px;
                             font-weight: 400;
                             font-size: 13px;
                             font-family: 'Inter';
@@ -434,11 +445,7 @@ main{
                     font-family: 'Phetsarath';
                 }
             }
-            main{
-                width: 100%;
-                height: 180px;
-                border: 1px solid black;
-            }
+           
         }
     }
     #products{
@@ -498,14 +505,14 @@ main{
             padding:35px;
             height: auto;
             display: flex;
-            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
-            
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 250px);
             .products-card{
-                flex: 1;
                 padding: 17px;
-                width: 200px;
-                height: 360px;
+                min-height: auto;
+                height: 320px;
                 background-color: #fff;
                 box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
                 border-radius: 16px;
@@ -513,6 +520,9 @@ main{
                 flex-direction: column;
                 position: relative;
                 h1{
+                    position: absolute;
+                    top: 5px;
+                    left: 17px;
                     font-weight: 700;
                     font-size: 16px;
                     font-family: 'Phetsarath';
@@ -567,7 +577,7 @@ main{
                     font-family: 'Phetsarath';
                     opacity: 0.8;
                     position: absolute;
-                    bottom: 13px;
+                    bottom: 5px;
                     right: 18px;
                 }
             }
@@ -685,282 +695,5 @@ footer{
     }
 }
 
+@import "_mq.scss"
 
-
-@media screen and (min-width:320px) and (max-width:768px){
-    .header-top{
-        height: 17px;
-        .header-top-content{
-            display: none;
-        }
-        .camera-header{
-            display: none;
-        }
-    }
-    header{
-        height: 65px;
-       .container{
-        max-width: 100%;
-        padding: 0 5px;
-        .header-content{
-            height: 65px;
-            .header-logo{
-                margin-right: 8px;
-                img{
-                width: 32px;
-                height: 32px;
-                }
-            }
-            .header-nav{
-                display: none;
-            }
-            .header-search{
-                margin-left: 10px;
-                width: 150px;
-                height: 34px;
-                justify-content: flex-start;
-                input{
-                    width: 120px;
-                    height: 34px;
-                    padding-left: 5px;
-                }
-                button{
-                    padding: 2px ;
-                    img{
-                        width: 18px;
-                        height: 18px;
-                    }
-                }
-            }
-            .header-language{
-                margin-left: 5px;
-                flex: 0;
-                button{
-                    width: 48px;
-                    height: 33px;
-                    padding: 0px;
-                }
-            }
-            .header-mobile-menu{
-                margin-left: 5px;
-                width: 90px;
-                height: 33px;
-                background-color: #809FBC;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                color:#fff;
-                span{
-                    font-weight: 600;
-                    font-size: 12px;
-                    font-family: 'Inter';
-                }
-                button{
-                    background: none;
-                    padding:3px;
-                    height: 33px;
-                    cursor: pointer;
-                    border: none;  
-                }
-                
-            }
-        }
-       }
-    }
-    main{
-        #banner{
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            .banner-title{
-                position: static;
-                height: 111px;
-                background: #053B6E;
-                padding-right: 0;
-                padding-bottom: 0;
-                text-align: left;
-                padding: 10px;
-                justify-content: center;
-                h1{
-                    font-size: 187%;
-                }
-                h3{
-                    
-                    font-size: 81%; 
-                }
-            }
-        }
-        #features{
-           height: 500px;
-            header{
-              .line{
-                width: 150px;
-              }
-             h1{
-                text-align: center;
-                
-                margin: 0 10px ;
-                font-size: 14px;
-             }
-
-            }
-           main{
-                display: flex;
-                overflow-x: scroll;
-                scroll-behavior: smooth;
-                justify-content: flex-start;
-                .card{
-                    flex: 0 0 300px;
-                  margin-right: 10px;
-                }
-            }
-        }
-        #projects{
-            .projects-content{
-                header{
-                    .line{
-                      width: 150px;
-                    }
-                   h1{
-                      text-align: center;
-                      margin: 0 10px ;
-                      font-size: 14px;
-                   }
-      
-                  }
-                  main{
-                    height: 320px;
-                    justify-content:flex-start;
-                    flex-direction: row;
-                    @include flex-center();
-                    .projects-card{
-                        
-                        width: 140px;
-                        height: 130px;
-                        margin-right: 10px;
-                        margin-bottom: 10px;
-                        .projects-card-title{
-                            bottom:0;
-                            height: 47px;
-                            h1{
-                                margin-bottom: 0px;
-                            }
-                            h2{
-                                display: none;
-                            }
-                        }
-                    }
-                  }
-                  .project-btn{
-                    margin-top:10px;
-                  }
-            }
-        }
-        #sponsor{
-           display: none;
-        }
-        #products{
-            header{
-                .line{
-                  width: 120px;
-                }
-               h1{
-                  text-align: center;
-                  margin: 0 10px ;
-                  font-size: 14px;
-               }
-  
-              }
-            nav{
-                display: none;
-            }
-            main{
-                gap: 5px;
-                .products-card{
-                    padding: 17px;
-                    width: 130px;
-                    height:200px;
-                   
-                    
-                    h1{
-                        font-size: 10px;
-                    }
-                    .card-logo{
-                        width: 34px;
-                        height: 20px;
-                        object-fit: cover;
-                    }
-                    .card-product{
-                        padding:10px;
-                        width: 140px;
-                        height: 100px;
-                    }
-                    .card-btn{ 
-                        height: 30px;
-                    }
-                    a{
-                     left: 40px;
-                       
-                    }
-                    h2{
-                        display: none;
-                    }
-
-                }
-            }
-
-        }
-        
-    }
-    footer{
-        height: 330px;
-        .container{
-            .footer-content{
-                height: 330px;
-                width: 100%;
-                flex-direction: row;
-                flex-wrap: wrap;
-                position: relative;
-                .footer-nav-logo{
-                    width: auto;
-                    .footer-nav{
-                        display: none;
-                    }
-                    .footer-logo{
-                        position: absolute;
-                        top: 35px;
-                        left: 20px;
-                        img{
-                            width: 34px;
-                            height: 34px;
-                        }
-                    }
-                    
-                }
-                .footer-title{
-                    width: 260px;
-                    border-bottom: none;
-                    .rectangle{
-                        display: none;
-                    }
-                    .footer-title-text{
-                        margin-left: 40px;
-                        height: auto;
-                        background: none;
-                        p{
-                            font-size: 13px;
-                        }
-                    }
-                }
-                .footer-credit{
-                    width: 100%;
-                    padding-top: 30px;
-                    border-top: 1px solid #fff;
-                    font-size: 12px;
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-        }
-    }
-}
