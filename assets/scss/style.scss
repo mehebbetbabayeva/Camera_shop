@@ -25,16 +25,16 @@ html,body{
 }
 @font-face {
     font-family: 'phetsarathregular';
-    src: url('phetsarath-regular-webfont.woff2') format('woff2'),
-         url('phetsarath-regular-webfont.woff') format('woff');
+    src: url('../font/phetsarath-regular-webfont.woff') format('woff2'),
+         url('../font/phetsarath-regular-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'inter_vregular';
-    src: url('inter-v-webfont.woff2') format('woff2'),
-         url('inter-v-webfont.woff') format('woff');
+    src: url('../font/inter-v-webfont.woff') format('woff2'),
+         url('../font/inter-v-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -164,7 +164,6 @@ header{
                 display: flex;
                 gap: 20px;
                 li{
-                    
                     padding: 5px;
                     border-radius: 3px;
                     a{
@@ -185,27 +184,30 @@ header{
             border-radius: 3px;
             height: 47px;
             width: 292px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             font-family: 'phetsarathregular';
             font-weight: 400;
             &:hover{
                 background: #c2c7cc; 
             }
-            input{
-                background: none;
-                border: none;
-                height: 47px;
-                outline: none;
-                font-size: 16px;
-                padding-left: 10px;
-            }
-            button{
-                background: none;
-                padding: 5px;
-                border: none; 
-                cursor: pointer; 
+            form{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                input{
+                    width: 90%;
+                    background: none;
+                    border: none;
+                    height: 47px;
+                    outline: none;
+                    font-size: 16px;
+                    padding-left: 10px;
+                }
+                button{
+                    background: none;
+                    padding: 5px;
+                    border: none; 
+                    cursor: pointer; 
+                }
             }
         }
         .header-language{

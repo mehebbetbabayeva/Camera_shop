@@ -12,11 +12,13 @@
         height: 65px;
        .container{
         max-width: 100%;
-        padding: 0 5px;
         .header-content{
+            padding: 0 5px;
+            width: 100%;
+            display: flex;
             height: 65px;
-            .header-logo{
-                margin-right: 8px;
+            gap: 10px;
+            .header-logo{  
                 img{
                 width: 32px;
                 height: 32px;
@@ -26,40 +28,40 @@
                 display: none;
             }
             .header-search{
-                margin-left: 10px;
+                margin-left: 0;
                 width: 150px;
                 height: 34px;
                 justify-content: flex-start;
-                input{
-                    width: 120px;
-                    height: 34px;
-                    padding-left: 5px;
-                }
-                button{
-                    padding: 2px ;
-                    img{
-                        width: 18px;
-                        height: 18px;
+                form{
+                    input{
+                        width: 120px;
+                        height: 34px;
+                        padding-left: 5px;
+                    }
+                    button{
+                        img{
+                            width: 18px;
+                            height: 18px;
+                        }
                     }
                 }
             }
             .header-language{
-                margin-left: 5px;
                 flex: 0;
                 button{
-                    width: 48px;
+                    width: 40px;
                     height: 33px;
                     padding: 0px;
                 }
             }
             .header-mobile-menu{
-                margin-left: 5px;
                 width: 90px;
                 height: 33px;
                 background-color: #809FBC;
                 display: flex;
                 align-items: center;
-                justify-content: space-around;
+                 gap: 5px;
+                 padding: 0 5px;
                 color:#fff;
                 span{
                     font-weight: 600;
@@ -107,7 +109,6 @@
               }
              h1{
                 text-align: center;
-                
                 margin: 0 10px ;
                 font-size: 14px;
              }
