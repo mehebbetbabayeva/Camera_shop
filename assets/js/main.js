@@ -22,3 +22,4 @@ document.querySelector("#cancel").addEventListener("click",()=>{
     menuOverlay.classList.remove("active");
     
 })
+
