@@ -1,0 +1,53 @@
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9{
+        display: none !important;
+}
+.show_all{
+    .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9{
+        display: flex !important;
+    }
+}
+.show_c1{
+    .c1{
+        display: flex !important;
+    }
+}
+.show_c2{
+    .c2{
+        display: flex !important;
+    }
+}
+.show_c3{
+    .c3{
+        display: flex !important;
+    }
+}
+.show_c4{
+    .c4{
+        display: flex !important;
+    }
+}
+.show_c5{
+    .c5{
+        display: flex !important;
+    }
+}
+.show_c6{
+    .c6{
+        display: flex !important;
+    }
+}
+.show_c7{
+    .c7{
+        display: flex !important;
+    }
+}
+.show_c8{
+    .c8{
+        display: flex !important;
+    }
+}
+.show_c9{
+    .c9{
+        display: flex !important;
+    }
+}

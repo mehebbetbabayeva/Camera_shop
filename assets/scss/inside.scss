@@ -77,26 +77,32 @@ main{
                 padding: 0 10px;
             }
             .product-parametr{
-                display: flex;
-                flex-direction: column;
-                height: 300px;
+                height: auto;
                 width: 700px;
-                p{
+                margin-bottom: 30px;
+                ul{
                     margin: 0;
-                    font-weight: 600;
-                    font-size: 15px;
-                    padding: 5px;
+                    padding: 0;
+                    width: 100%;
                     display: flex;
-                    align-items: center;
-                    &::before{
-                        content: '';
-                        display: block;
-                        width: 12px;
-                        height: 6px;
-                        background: #013F79;
-                        border-radius: 17px;
-                        margin-right: 10px;
-
+                    flex-direction: column;
+                    gap: 10px;
+                    li{
+                        width: 100%;
+                        font-weight: 600;
+                        font-size: 15px;
+                        display: flex;
+                        align-items: center;
+                        &::before{
+                            content: '';
+                            display: block;
+                            width: 12px;
+                            height: 6px;
+                            background: #013F79;
+                            border-radius: 17px;
+                            margin-right: 10px;
+    
+                        }
                     }
                 }
             }
@@ -201,78 +207,84 @@ main{
         align-items: center;
         .similar-products-main{
             width: 100%;
-            padding:20px 0 70px 0;
+            padding: 35px;
             height: auto;
             display: flex;
             justify-content: center;
-            gap: 60px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, 250px);
+            gap: 20px;
+            flex-wrap: wrap;
             .products-card {
+                text-decoration: none;
+                color: black;
                 padding: 17px;
                 min-height: auto;
                 height: 320px;
-                background-color: #fff;
-                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+                background-color: #fff;      
                 border-radius: 16px;
                 display: flex;
                 flex-direction: column;
                 position: relative;
+                 box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+                .comp{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 60%;
+                    padding: 10px 0px 20px 0px;
+                    .compare{
+                        padding-left: 10px;
+                        background: url('../icon/compare_arrows.svg') no-repeat left center;
+                        background-size: 8px;
+                    }
+                }
                 h1 {
                     position: absolute;
                     top: 5px;
                     left: 17px;
                     font-weight: 700;
-                    font-size: 16px;
+                    font-size: 16px;;
                 }
                 .card-logo {
-                    width: 54px;
-                    height: 30px;
-                    position: absolute;
-                    top: 10px;
-                    right: 17px;
+                        width: 54px;
+                        height: 30px;
+                        position: absolute;
+                        top: 10px;
+                        right: 17px;
+
                 }
                 .card-product {
                     padding: 25px 0;
                 }
                 .card-btn {
-                    background: #013F79;
-                    border-radius: 8px;
-                    width: 100%;
-                    padding: 15px 0;
-                    border: none;
-                    cursor: pointer;
-                    color: #fff;
-                    @include flex-center();
+                        background: #013F79;
+                        border-radius: 8px;
+                        width: 100%;
+                        padding: 15px 0;
+                        border: none;
+                        cursor: pointer;
+                        color: #fff;
+                        position: relative;
+                        @include flex-center(); 
+                        &:after{
+                            position: absolute;
+                            right: 0px;
+                            top: 15px;
+                            background: url(../icon/shopping_basket.svg);
+                            width: 24px;
+                            content: "";
+                            height: 20px;
+                            opacity: 0;
+                            transition: .3s;
+                    }
                     &:hover {
+                        &:after{
+                            right: 25px;
+                            opacity: 1;
+                        }
                         background: #0957a0;
                     }
-                    span {
-                        font-weight: 700;
-                        font-size: 16px;
-                        margin-right: 10px;
-                    }
                 }
-                a {
-                    position: absolute;
-                    bottom: 13px;
-                    left: 17px;
-                    display: flex;
-    
-                    span {
-                        color: #000000;
-    
-                        font-size: 10px;
-                        margin-left: 6px;
-                    }
-                }
-                h2 {
-                    font-size: 62%;
-                    opacity: 0.8;
-                    position: absolute;
-                    bottom: 5px;
-                    right: 18px;
-                }
+               
+                
             }
         }
     }  
