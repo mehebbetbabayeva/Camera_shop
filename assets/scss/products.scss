@@ -1,15 +1,14 @@
 @import "./style.scss";
 
 main{
-    #products{
-        width:100%;
+    #products-item{
         display: flex;
-        border: 1px solid red;
-        padding: 50px;
+        width:100%;
+        height: auto;
         background-color: #fff;
+        padding: 20px;
         .products-nav{
-            border: 1px solid red;
-            width: 30%;
+            width: 20%;
             .brend {
                 border-radius: 20px;
                 background: #E6ECF2;
@@ -53,12 +52,122 @@ main{
                 }
             }
             .select{
+                
+                margin: 20px 0;
                 width: 100%;
                 border-radius: 20px;
                 background: #E6ECF2;
                 display: flex;
                 flex-direction: column;
                 padding: 20px;
+                select{
+                    padding: 10px;
+                    font-weight: 400;
+                    font-size: 13px;
+                    border: none;
+                    outline: none;
+                }
+                span{
+                    margin-bottom: 10px;
+                }
+            }
+            button{
+background: #013F79;
+border-radius: 8px;
+padding: 10px 50px;
+color: #fff;
+border: none;
+outline: none;
+cursor: pointer;
+display: flex;
+flex-direction: column;
+align-items: center;
+span{
+    font-size: 12px;
+    font-weight: lighter;
+}
+&:hover{
+    background: #035eb3;
+}
+            }
+        }
+        .products-content{
+            width: 70%;
+            flex-wrap: wrap;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            .products-card {
+                .comp{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 60%;
+                    padding: 10px 0px 20px 0px;
+                    .compare{
+                        padding-left: 10px;
+                        background: url('../icon/compare_arrows.svg') no-repeat left center;
+                        background-size: 8px;
+                    }
+                }
+                text-decoration: none;
+                color: black;
+                padding: 17px;
+                min-height: auto;
+                height: 320px;
+                background-color: #fff;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                border-radius: 16px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                h1 {
+                    position: absolute;
+                    top: 5px;
+                    left: 17px;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+                .card-logo {
+                    width: 54px;
+                    height: 30px;
+                    position: absolute;
+                    top: 10px;
+                    right: 17px;
+                }   
+                .card-product {
+                    padding: 25px 0;
+                }   
+                .card-btn {
+                    background: #013F79;
+                    border-radius: 8px;
+                    width: 100%;
+                    padding: 15px 0;
+                    border: none;
+                    cursor: pointer;
+                    color: #fff;
+                    position: relative;
+                    @include flex-center(); 
+                    &:after{
+                            position: absolute;
+                            right: 0px;
+                            top: 15px;
+                            background: url(../icon/shopping_basket.svg);
+                            width: 24px;
+                            content: "";
+                            height: 20px;
+                            opacity: 0;
+                            transition: .3s;
+                    }
+                    &:hover {
+                        &:after{
+                            right: 25px;
+                            opacity: 1;
+                        }
+                        background: #0957a0;
+                    }
+                    
+                }  
             }
         }
     }
