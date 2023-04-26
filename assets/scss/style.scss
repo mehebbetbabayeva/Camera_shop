@@ -243,7 +243,7 @@ header {
             }
         }
 
-        .header-mobile-menu {
+        .header-mobile-menu{
             display: none;
         }
     }
@@ -665,7 +665,7 @@ footer {
             display: none;
         }
     }
- header{
+    header{
             padding: 0 10px;
             width: 100%;
             display: flex;
@@ -850,8 +850,7 @@ footer {
                 }
             }
 
-        }
-        
+        }   
     }
     footer{
         height: 330px;
@@ -903,6 +902,58 @@ footer {
                 }
             }
         }
+    }
+}
+@media screen and (min-width:769px) and (max-width:1175px){
+    .header-top{
+        .camera{
+            display: none;
+        }
+    }
+    header{
+        padding: 0 30px;
+        width: 100%;
+        display: flex;
+        height: 65px;       
+        
+        .header-search{
+            width: 170px;
+            form{
+                width: 100%;
+                input{
+                    height: 34px;
+                    padding-left: 10px;
+                }
+                button{
+                    top: 3px;                        
+                }
+            }
+        }
+        .header-language{
+            flex: 0;
+            button{
+                width: 40px;
+                height: 33px;
+                padding: 0px;
+            }
+        }
+    }
+    main{
+        header { 
+            &::after{
+                top: 30px;
+            }
+        }
+        #projects{            
+         .projects-card-title{
+                              h2{
+                                  display: none;
+                              }
+                             h1{
+                                font-weight: 400;
+                             }
+                          }  
+        } 
     }
 }
 // @import "_mq.scss";

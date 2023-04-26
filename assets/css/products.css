@@ -1008,6 +1008,51 @@ footer .container .footer-content .footer-credit span {
             justify-content: center;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1175px) {
+  .header-top .camera {
+    display: none;
+  }
+  header {
+    padding: 0 30px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 65px;
+  }
+  header .header-search {
+    width: 170px;
+  }
+  header .header-search form {
+    width: 100%;
+  }
+  header .header-search form input {
+    height: 34px;
+    padding-left: 10px;
+  }
+  header .header-search form button {
+    top: 3px;
+  }
+  header .header-language {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+  header .header-language button {
+    width: 40px;
+    height: 33px;
+    padding: 0px;
+  }
+  main header::after {
+    top: 30px;
+  }
+  main #projects .projects-card-title h2 {
+    display: none;
+  }
+  main #projects .projects-card-title h1 {
+    font-weight: 400;
+  }
+}
 .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9 {
   display: none !important;
 }
