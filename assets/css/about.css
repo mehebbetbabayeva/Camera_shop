@@ -1052,6 +1052,15 @@ footer .container .footer-content .footer-credit span {
   main #projects .projects-card-title h1 {
     font-weight: 400;
   }
+  footer {
+    height: 330px;
+  }
+  footer .container .footer-content .footer-nav-logo .footer-nav ul {
+    gap: 10px;
+  }
+  footer .container .footer-content .footer-credit {
+    padding: 0;
+  }
 }
 .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9 {
   display: none !important;

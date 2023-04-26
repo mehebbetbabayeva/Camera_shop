@@ -955,6 +955,27 @@ footer {
                           }  
         } 
     }
+    footer{
+        height: 330px;
+        .container{
+            .footer-content{
+                .footer-nav-logo{
+                    .footer-nav{
+                        ul{
+                            gap: 10px;
+                        }
+                    }
+                   
+                    
+                }
+                .footer-credit {
+                    padding:0;
+                    
+                }
+                
+            }
+        }
+    }
 }
 // @import "_mq.scss";
 @import "_show.scss";
