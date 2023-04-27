@@ -1220,7 +1220,7 @@ main #products-item .products-item form .brend label span, main #products-item .
   right: 0;
   bottom: 0;
 }
-main #products-item .products-item form .brend label .checked-input:checked + span, main #products-item .products-item form .format label .checked-input:checked + span {
+main #products-item .products-item form .brend label input[type=checkbox]:checked + span, main #products-item .products-item form .format label input[type=checkbox]:checked + span {
   background: #013F79;
   border-radius: 53px;
   color: white;

@@ -61,7 +61,7 @@ main{
                         right: 0;
                         bottom: 0;
                        }
-                       .checked-input:checked + span {
+                       input[type="checkbox"]:checked + span {
                         background: #013F79;
                         border-radius: 53px;
                         color: white;
