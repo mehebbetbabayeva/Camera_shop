@@ -53,3 +53,82 @@ main{
 
     }
 }
+
+@media screen and (min-width:320px) and (max-width:768px){
+    main{
+        #about{
+            .container{
+                width: 100%;
+                .about-content{
+                    flex-direction: column;
+                    padding:10px;
+                    article{
+                        width:100%;
+                        padding:0;
+                        h1{
+                            margin-bottom: 5px;
+                        }
+                        h2,h3{
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            
+                        }
+                        h1,h2{
+                            
+                            font-size: 25px;
+                        }
+                        p{
+                            margin-bottom: 5px;
+                            font-size: 14px;
+    
+                        }
+                        h3{
+                            font-size: 20px;
+                        }
+                    }
+                    .about-products-image{
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@media screen and (min-width:769px) and (max-width:1175px){
+    main{
+        #about{
+            .container{
+                width: 100%;
+                .about-content{
+                  
+                    
+                    article{
+                       
+                        padding: 10px 20px 10px 0;
+                        
+                        h2,h3{
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            
+                        }
+                        h1,h2{
+                            
+                            font-size: 25px;
+                        }
+                        p{
+                            margin-bottom: 5px;
+                            font-size: 14px;
+    
+                        }
+                        h3{
+                            font-size: 20px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}

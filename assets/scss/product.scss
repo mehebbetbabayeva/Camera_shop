@@ -289,3 +289,84 @@ main{
         }
     }  
 }
+
+@media screen and (min-width:320px) and (max-width:768px){
+    main{
+        #products-detail{
+            padding: 10px;
+            .product-compare{
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                flex-direction: column;
+                .product-price{ 
+                    justify-content: space-between;
+                    span{
+                        font-weight: 400;
+                        font-size: 20px;
+                    }
+                    
+                }
+            }
+           .container{
+            width: 100%;
+            .product-detail-info{
+                border-radius: 10px;
+                height: auto;
+                position: static;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                h1{
+                    text-align: left;
+                    padding: 5px;
+                    position: static;
+                }
+                .product-parametr{
+                    width: 100%;
+                    ul{
+                        li{
+                           
+                            font-size: 13px; 
+                            text-align: justify;
+                            &::before{
+                                width: 6px;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+                .tecnical-parametr{
+                    width: 100%;
+                    position: static;
+                }
+                .product-images{
+                    margin-top: 20px;
+                    width: 100%;
+                    position: static;
+                     .main-image >img , .detail-images >img{
+                        width: 100%;
+                    }
+                    .detail-images{
+                       display: none;
+                    }
+                }
+            }
+           }
+        }
+    }
+}
+@media screen and (min-width:769px) and (max-width:1313px){
+    main{
+        #products-detail{
+            .product-detail-info{
+                .product-images{
+                   display: none;
+                    
+                }
+            
+           }
+        }
+    }
+}

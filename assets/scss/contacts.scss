@@ -40,6 +40,7 @@ main{
                                 border: none;
                                 outline: none;
                                 margin-bottom: 20px;
+                                
                                 &:focus{
                                     background-color: darken(#E6ECF2, 10%); 
                                 }
@@ -64,5 +65,29 @@ main{
             }
         }
 
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    main{
+        #contacts{
+            .container{
+                width: 100%;
+                .contacts-content{
+                    flex-direction: column;
+                    padding:0;
+                    .contact-us{
+                        padding:10px 10px 20px 10px;
+                        width: 100%;
+                        h1{
+                            font-weight: 600;
+                            margin-bottom: 50px;
+                        }
+                        
+                    }
+                }
+            }
+    
+        }
     }
 }
