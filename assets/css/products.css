@@ -1127,23 +1127,42 @@ footer .container .footer-content .footer-credit span {
 }
 
 main #products-item {
+  width: 100%;
+  background-color: #fff;
+}
+main #products-item .products-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: auto;
-  background-color: #fff;
   padding: 20px;
 }
-main #products-item .products-nav {
-  width: 20%;
-}
-main #products-item .products-nav .brend {
+main #products-item .products-item form {
   border-radius: 20px;
+  margin: 0;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+main #products-item .products-item form .brend {
+  border-radius: 20px 20px 0 0;
+  padding: 30px 0;
+}
+main #products-item .products-item form .format {
+  padding: 30px 0;
+  border-radius: 0 0 20px 20px;
+}
+main #products-item .products-item form .brend, main #products-item .products-item form .format {
   background: #E6ECF2;
-  padding: 20px 60px 20px 0;
-  margin: 0;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1154,43 +1173,59 @@ main #products-item .products-nav .brend {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 100%;
 }
-main #products-item .products-nav .brend h4 {
+main #products-item .products-item form .brend h4, main #products-item .products-item form .format h4 {
+  padding: 7px 7px 7px 20px;
+  margin: 0;
+}
+main #products-item .products-item form .brend label, main #products-item .products-item form .format label {
+  display: block;
+  position: relative;
+  padding: 5px;
+  border-radius: 4px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+main #products-item .products-item form .brend label input, main #products-item .products-item form .format label input {
+  visibility: hidden;
+}
+main #products-item .products-item form .brend label span, main #products-item .products-item form .format label span {
   padding-left: 20px;
-  margin: 0;
-}
-main #products-item .products-nav .brend ul {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 0;
-  padding: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
-main #products-item .products-nav .brend ul li {
-  padding: 5px 0 5px 20px;
-  width: 100%;
-}
-main #products-item .products-nav .brend ul li a {
-  font-weight: 400;
-  font-size: 16px;
-  color: #000;
-}
-main #products-item .products-nav .brend ul li:hover {
+main #products-item .products-item form .brend label .checked-input:checked + span, main #products-item .products-item form .format label .checked-input:checked + span {
   background: #013F79;
   border-radius: 53px;
+  color: white;
 }
-main #products-item .products-nav .brend ul li:hover a {
-  color: #fff;
-}
-main #products-item .products-nav .select {
+main #products-item .products-item form .select {
   margin: 20px 0;
   width: 100%;
   border-radius: 20px;
@@ -1204,17 +1239,17 @@ main #products-item .products-nav .select {
           flex-direction: column;
   padding: 20px;
 }
-main #products-item .products-nav .select select {
+main #products-item .products-item form .select select {
   padding: 10px;
   font-weight: 400;
   font-size: 13px;
   border: none;
   outline: none;
 }
-main #products-item .products-nav .select span {
+main #products-item .products-item form .select span {
   margin-bottom: 10px;
 }
-main #products-item .products-nav button {
+main #products-item .products-item form button {
   background: #013F79;
   border-radius: 8px;
   padding: 10px 50px;
@@ -1233,14 +1268,14 @@ main #products-item .products-nav button {
       -ms-flex-align: center;
           align-items: center;
 }
-main #products-item .products-nav button span {
+main #products-item .products-item form button span {
   font-size: 12px;
   font-weight: lighter;
 }
-main #products-item .products-nav button:hover {
+main #products-item .products-item form button:hover {
   background: #035eb3;
 }
-main #products-item .products-content {
+main #products-item .products-item .products-content {
   width: 70%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1253,7 +1288,7 @@ main #products-item .products-content {
           justify-content: center;
   gap: 20px;
 }
-main #products-item .products-content .products-card {
+main #products-item .products-item .products-content .products-card {
   text-decoration: none;
   color: black;
   padding: 17px;
@@ -1272,7 +1307,7 @@ main #products-item .products-content .products-card {
           flex-direction: column;
   position: relative;
 }
-main #products-item .products-content .products-card .comp {
+main #products-item .products-item .products-content .products-card .comp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1282,29 +1317,29 @@ main #products-item .products-content .products-card .comp {
   font-size: 60%;
   padding: 10px 0px 20px 0px;
 }
-main #products-item .products-content .products-card .comp .compare {
+main #products-item .products-item .products-content .products-card .comp .compare {
   padding-left: 10px;
   background: url("../icon/compare_arrows.svg") no-repeat left center;
   background-size: 8px;
 }
-main #products-item .products-content .products-card h1 {
+main #products-item .products-item .products-content .products-card h1 {
   position: absolute;
   top: 5px;
   left: 17px;
   font-weight: 700;
   font-size: 16px;
 }
-main #products-item .products-content .products-card .card-logo {
+main #products-item .products-item .products-content .products-card .card-logo {
   width: 54px;
   height: 30px;
   position: absolute;
   top: 10px;
   right: 17px;
 }
-main #products-item .products-content .products-card .card-product {
+main #products-item .products-item .products-content .products-card .card-product {
   padding: 25px 0;
 }
-main #products-item .products-content .products-card .card-btn {
+main #products-item .products-item .products-content .products-card .card-btn {
   background: #013F79;
   border-radius: 8px;
   width: 100%;
@@ -1323,7 +1358,7 @@ main #products-item .products-content .products-card .card-btn {
       -ms-flex-align: center;
           align-items: center;
 }
-main #products-item .products-content .products-card .card-btn:after {
+main #products-item .products-item .products-content .products-card .card-btn:after {
   position: absolute;
   right: 0px;
   top: 15px;
@@ -1335,10 +1370,30 @@ main #products-item .products-content .products-card .card-btn:after {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-main #products-item .products-content .products-card .card-btn:hover {
+main #products-item .products-item .products-content .products-card .card-btn:hover {
   background: #0957a0;
 }
-main #products-item .products-content .products-card .card-btn:hover:after {
+main #products-item .products-item .products-content .products-card .card-btn:hover:after {
   right: 25px;
   opacity: 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  main #products-item .container {
+    width: 100%;
+  }
+  main #products-item .container .products-item {
+    padding: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #products-item .container .products-item form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main #products-item .container .products-item .products-content {
+    width: 100%;
+  }
 }
